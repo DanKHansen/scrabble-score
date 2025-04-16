@@ -1,6 +1,6 @@
 object ScrabbleScore:
    def score(s: String): Int =
-      s.toUpperCase.toSeq.map {
+      s.toUpperCase.map {
          case 'A' | 'E' | 'I' | 'O' | 'U' | 'L' | 'N' | 'R' | 'S' | 'T' => 1
          case 'D' | 'G'                                                 => 2
          case 'B' | 'C' | 'M' | 'P'                                     => 3
